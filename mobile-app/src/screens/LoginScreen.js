@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import ExampleComponent from '../components/ExampleComponent';
+import LoginButton from '../components/LoginButton';
 
-const HomeScreen: React.FC = () => {
+const LoginScreen = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Welcome to My Mobile App</Text>
-            <ExampleComponent />
+            <Text style={styles.title}>Login</Text>
+            <LoginButton />
         </View>
     );
 };
@@ -16,13 +16,12 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#f5f5f5',
+        backgroundColor: '#fff',
     },
     title: {
         fontSize: 24,
-        fontWeight: 'bold',
         marginBottom: 20,
     },
 });
 
-export default HomeScreen;
+export default LoginScreen;
