@@ -1,0 +1,27 @@
+{
+  "name": "my-mobile-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build": "expo build"
+  },
+  "dependencies": {
+    "expo": "~48.0.0",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-native": "0.71.0",
+    "react-navigation": "^6.0.0",
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "jest": {
+    "preset": "react-native"
+  }
+}
