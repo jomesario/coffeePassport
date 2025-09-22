@@ -2,7 +2,10 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
-    "lib": ["esnext", "dom"],
+    "lib": [
+      "esnext",
+      "dom"
+    ],
     "jsx": "react-native",
     "strict": true,
     "esModuleInterop": true,
@@ -11,13 +14,29 @@
     "outDir": "./dist",
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/*"],
-      "@screens/*": ["screens/*"],
-      "@navigation/*": ["navigation/*"],
-      "@services/*": ["services/*"],
-      "@types/*": ["types/*"]
+      "@components/*": [
+        "components/*"
+      ],
+      "@screens/*": [
+        "screens/*"
+      ],
+      "@navigation/*": [
+        "navigation/*"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@types/*": [
+        "types/*"
+      ]
     }
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist"]
+  "include": [
+    "src/**/*"
+, "App.js"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "extends": "expo/tsconfig.base"
 }
